@@ -1,2 +1,4 @@
 /img
 /venv
+/src/__pycache__
+/src/temp*

@@ -1,8 +1,8 @@
-from kivy.uix.floatlayout import FloatLayout
+from kivy.uix.widget import Widget
 from kivy.graphics import Color, Ellipse
 import math
 
-class Joystick(FloatLayout):
+class Joystick(Widget):
     def __init__(self, *args, gamepad, left=True, **kwargs):
         self.gamepad = gamepad
         self.left = left
