@@ -32,12 +32,12 @@ def save(widget=None, *args, **kwargs):
         if widget:
             save_dict = serialize_save(widget, *args, **kwargs)
         save_file.write(str(save_dict))
-        print('Saved to ' + SAVE_FILE + '.')
+    print('Saved to ' + SAVE_FILE + '.')
 
 def serialize_save(widget, window=None):
     serialized = {}
     if window:
-        serialized['size'] = window.size # (round(window.width / 1.25), round(window.height / 1.25))
+        serialized['size'] = window.size
         serialized['pos'] = (window.top, window.left)
     else:
         serialized['size'] = widget.size

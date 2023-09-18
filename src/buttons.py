@@ -47,6 +47,7 @@ class Buttons(GridLayout):
         self.buttons["Y"].bind(on_press=lambda *args:self.press("Y", *args))
         self.buttons["Y"].bind(on_release=lambda *args:self.release("Y", *args))
         self.buttons["START"].bind(on_press=lambda *args:self.press("START", *args))
+        self.buttons["START"].bind(on_release=lambda *args:self.release("START", *args))
         
         self.add_widget(self.spacers[0])
         self.add_widget(self.buttons["Y"])
