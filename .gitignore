@@ -1,9 +1,9 @@
-/img
-/venv
-/src/__pycache__
-/src/temp*
-/.vscode
+img
+venv
+__pycache__
+temp*
+.vscode
 main.build
 main.dist
 *nuitka-package.config.yml
-src/mask.png
+src/img/mask.png

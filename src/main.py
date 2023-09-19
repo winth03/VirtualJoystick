@@ -31,7 +31,7 @@ from kivy.resources import resource_find
 import image
 image.new_image(size)
 image.save_image()
-mask = resource_find('img/mask.png')
+mask = resource_find('img/temp_mask.png')
 
 def move_widgets_start(self, touch):
     if self.collide_point(*touch.pos):
@@ -141,7 +141,6 @@ class VirtualGamepadApp(App):
         self.main_window = MainWindow()
         title = "Virtual Joystick"
         Window.set_title(title)
-        print(Window.size)
         hwnd = win32gui.FindWindow(None, title)
         ex_style = win32gui.GetWindowLong(hwnd, win32con.GWL_EXSTYLE)
         win32gui.SetWindowLong(hwnd, win32con.GWL_EXSTYLE, ex_style | win32con.WS_EX_LAYERED | win32con.WS_EX_NOACTIVATE)

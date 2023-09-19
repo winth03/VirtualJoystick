@@ -1,6 +1,6 @@
 from PIL import Image, ImageDraw
 
-IMG_PATH = "img/mask.png"
+IMG_PATH = "img/temp_mask.png"
 image = None
 offset = 0
 
